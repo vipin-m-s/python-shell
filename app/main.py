@@ -3,7 +3,8 @@ import sys
 
 def main():
     # Uncomment this block to pass the first stage
-    sys.stdout.write("$ ")
+    sys.stdout.write("$ \n")
+
 
     # Wait for user input
     command = input()
