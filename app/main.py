@@ -14,7 +14,7 @@ def main():
             sys.stdout.write(f"{command}: command not found\n")
         
         if command == "exit 0":
-            break 
+            sys.exit(0) 
 
 if __name__ == "__main__":
     main()
