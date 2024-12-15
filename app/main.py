@@ -4,12 +4,13 @@ import sys
 def main():
     # Uncomment this block to pass the first stage
 
+    valid_commands = set()
 
     while True:
         sys.stdout.write("$ ")
         command = input()
 
-        if ("invalid" in command) and ("command" in command) :
+        if command not in valid_commands :
             sys.stdout.write(f"{command}: command not found\n")
 
 if __name__ == "__main__":
