@@ -4,7 +4,7 @@ import sys
 def main():
     # Uncomment this block to pass the first stage
 
-    valid_commands = set()
+    valid_commands = {"exit 0"}
 
     while True:
         sys.stdout.write("$ ")
@@ -12,6 +12,9 @@ def main():
 
         if command not in valid_commands :
             sys.stdout.write(f"{command}: command not found\n")
+        
+        if command == "exit 0":
+            break 
 
 if __name__ == "__main__":
     main()
