@@ -10,8 +10,8 @@ def main():
     command = input()
 
     if command.startswith("invalid") and command.endswith("command"):
-        sys.stdout.write(f"\n{command}: command not found")
-
+        sys.stdout.write(f"{command}: command not found")
+    sys.stdout.write("\n")
 
 if __name__ == "__main__":
     main()
